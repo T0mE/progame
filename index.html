@@ -19,19 +19,19 @@
     <script src="https://kit.fontawesome.com/661d383c8e.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
 
-    <nav id="navbar" class="navbar navbar-expand-lg position-sticky top-0">
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-headset"></i> <span
-                    class="blue-text">pro</span>gamers</a>
+            <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-headset"></i> pro<span
+                    class="blue-text">gamers</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#home">Home</a>
                     <a class="nav-link" href="#aboutus">o nas</a>
                     <a class="nav-link" href="#portfolio">portfolio</a>
                     <a class="nav-link" href="#prices">ceny</a>
@@ -43,21 +43,154 @@
         </div>
     </nav>
 
-    <header>
+    <header id="home">
         <div class="hero-img">
             <div class="hero-shadow"></div>
             <div class="hero-text">
                 <h1>witajcie w pro<span class="blue-text">gamers</span></h1>
                 <p>W miejscu, gdzie gry tworzymy z pasją</p>
+                <a type="button" class="btn btn-outline-light">poznaj nas</a>
             </div>
+            <a href="#aboutus"><i class="fa-sharp fa-solid fa-chevron-down"></i></a>
+
         </div>
     </header>
 
-    <div style="height:100vh"></div>
+    <main>
+        <section id="aboutus" class="aboutus bg-light py-5">
+            <div class="container">
+                <h2>o nas</h2>
+                <div class="underline"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-mobile-screen-button"></i></p>
+                        <p class="aboutus-card-title mb-1">mobile gaming</p>
+                        <p class="aboutus-card-text">Tworzymy gry na urządzenia mobile!</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-desktop"></i></i></p>
+                        <p class="aboutus-card-title mb-1">desktop gaming</p>
+                        <p class="aboutus-card-text">Tworzymy gry na PC!</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-file-code"></i></p>
+                        <p class="aboutus-card-title mb-1">najwyższe standardy</p>
+                        <p class="aboutus-card-text">Zachowujemy najwyższe standardy podczas pisania kodu.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-paw"></i></p>
+                        <p class="aboutus-card-title mb-1">kochamy zwierzęta</p>
+                        <p class="aboutus-card-text">Wszystkie nasze gry są bezpieczne dla środowiska!</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-burger"></i></p>
+                        <p class="aboutus-card-title mb-1">lubimy dobre jedzenie</p>
+                        <p class="aboutus-card-text">Lubimy dobrze zjeść przed przystąpieniem do naszych zadań</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                        <p><i class="fa-solid fa-champagne-glasses"></i></p>
+                        <p class="aboutus-card-title mb-1">świetne relacje</p>
+                        <p class="aboutus-card-text">Zachowujemy świetne relacje z naszymi klientami!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="aboutus-hero py-5">
+            <div class="aboutus-shadow"></div>
+            <div class="container py-4">
+                <h2>tworzymy gry na platformy</h2>
+                <div class="underline"></div>
+                <div class="row">
+                    <div class="col-lg-4 text-center aboutus-hero-item">
+                        <p class="aboutus-hero-title mb-1">PC</p>
+                        <p><i class="fab fa-steam-square"></i></p>
+                        <p class="aboutus-hero-text">Graj na blaszaku ze swoimi znajomymi</p>
+                    </div>
+                    <div class="col-lg-4 text-center aboutus-hero-item">
+                        <p class="aboutus-hero-title mb-1">PlayStation</p>
+                        <p><i class="fa-brands fa-playstation"></i></p>
+                        <p class="aboutus-hero-text">Gry świetnie prezentują się na konsoli od Sony!</p>
+                    </div>
+                    <div class="col-lg-4 text-center aboutus-hero-item">
+                        <p class="aboutus-hero-title mb-1">Xbox</p>
+                        <p><i class="fa-brands fa-xbox"></i></p>
+                        <p class="aboutus-hero-text">Fani Xboxa spędzą z nami mnóstwo godzin!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio bg-light py-5">
+
+            <h2>portfolio</h2>
+            <div class="underline"></div>
+            <div class="container">
+
+                <!-- Mobile -->
+                <div class="card-group d-lg-none">
+                    <div class="card me-sm-3">
+                        <img src="./img/gaming-big.jpg" class="d-block w-100" alt="Dwie osoby grają na PS.">
+                        <div class="card-body">
+                            <h5 class="card-title">Pro-X- Football</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/way-big.jpg" class="d-block w-100" alt="Auto w garażu">
+                        <div class="card-body">
+                            <h5 class="card-title">Racing GT</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Na desktop -->
+                <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/gaming-big.jpg" class="d-block w-100" alt="Dwie osoby grają na PS.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Pro-X- Football</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/way-big.jpg" class="d-block w-100" alt="Auto w garażu">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Racing GT</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <div style="height:100vh"></div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
