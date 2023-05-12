@@ -292,6 +292,28 @@ header {
 	}
 }
 
+.achievments {
+	i {
+		padding: 10px;
+		font-size: 48px;
+		color: $white;
+		text-shadow: 0 0 5px #000;
+	}
+
+	.achievment-list {
+		padding: 20px 0;
+	}
+
+	.achievment-number {
+		font-size: 22px;
+	}
+
+	.achievment-text {
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+}
+
 @media (min-width: 375px) {
 	header {
 		h1 {
